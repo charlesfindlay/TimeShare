@@ -13,6 +13,7 @@
 		560B79651DFCE3EC00EBC855 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560B79641DFCE3EC00EBC855 /* MessagesViewController.swift */; };
 		560B79681DFCE3EC00EBC855 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 560B79661DFCE3EC00EBC855 /* MainInterface.storyboard */; };
 		560B796A1DFCE3EC00EBC855 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 560B79691DFCE3EC00EBC855 /* Assets.xcassets */; };
+		56E2CA791E15E9C800A4B972 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E2CA781E15E9C800A4B972 /* EventViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		560B79671DFCE3EC00EBC855 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		560B79691DFCE3EC00EBC855 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		560B796B1DFCE3EC00EBC855 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56E2CA781E15E9C800A4B972 /* EventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 			children = (
 				560B79641DFCE3EC00EBC855 /* MessagesViewController.swift */,
 				560B79661DFCE3EC00EBC855 /* MainInterface.storyboard */,
+				56E2CA781E15E9C800A4B972 /* EventViewController.swift */,
 				560B79691DFCE3EC00EBC855 /* Assets.xcassets */,
 				560B796B1DFCE3EC00EBC855 /* Info.plist */,
 			);
@@ -212,6 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				560B79651DFCE3EC00EBC855 /* MessagesViewController.swift in Sources */,
+				56E2CA791E15E9C800A4B972 /* EventViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
