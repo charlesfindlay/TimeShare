@@ -10,11 +10,23 @@ import UIKit
 
 class EventViewController: UIViewController {
 
+    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var datePicker: UIDatePicker!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
+    
+    @IBAction func saveSelectedDates(_ sender: UIButton) {
+    }
+    
+    @IBAction func addDate(_ sender: UIButton) {
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

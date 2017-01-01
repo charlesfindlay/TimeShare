@@ -103,6 +103,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efR-0n-xKq">
                                         <rect key="frame" x="0.0" y="0.0" width="64" height="44"/>
                                         <state key="normal" title="Add Date"/>
+                                        <connections>
+                                            <action selector="addDate:" destination="JuD-Fj-hWp" eventType="touchUpInside" id="pV3-Hb-6vi"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hr1-p2-IfG">
                                         <rect key="frame" x="104" y="0.0" width="44" height="44"/>
@@ -111,6 +114,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         <state key="normal" title="Save"/>
+                                        <connections>
+                                            <action selector="saveSelectedDates:" destination="JuD-Fj-hWp" eventType="touchUpInside" id="b3O-n5-RNl"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -131,6 +137,10 @@
                             <constraint firstAttribute="trailingMargin" secondItem="A8c-zX-6a5" secondAttribute="trailing" id="zeN-kS-4ql"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="datePicker" destination="wjA-SM-BLw" id="wqT-dv-P7O"/>
+                        <outlet property="tableView" destination="A8c-zX-6a5" id="Fs0-pc-dZ8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6AV-Li-sFE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -190,6 +200,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                 <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="saveSelectedDates:" destination="3Bk-KG-Owg" eventType="touchUpInside" id="qCm-1M-N34"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -202,6 +215,9 @@
                             <constraint firstItem="zSA-9f-juw" firstAttribute="centerX" secondItem="04a-Kc-Jsq" secondAttribute="centerX" id="xPh-7w-GU7"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="afy-P4-CcQ" id="4ev-HJ-MyK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a8Q-Ng-t7t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
