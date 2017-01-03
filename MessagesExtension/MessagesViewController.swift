@@ -17,6 +17,35 @@ class MessagesViewController: MSMessagesAppViewController {
     }
     
     @IBAction func createNewEvent(_ sender: UIButton) {
+        requestPresentationStyle(.expanded)
+        
+    }
+    
+    func displayEventController(conversation: MSConversation?, identifier: String) {
+        
+        //0 - sanity check, is there a conversation?
+        guard let conversation = conversation else { return }
+        
+        //1 - create the child view controller
+        guard let vc = storyboard?.instantiateViewController(withIdentifier: identifier) as? EventViewController else { return }
+
+        //2 Add the child to the parent so that events are forwarded
+        addChildViewController(vc)
+        
+        //3 Give the child a meaningful frame: Make it fill our view
+        vc.view.frame = view.bounds
+        vc.view.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(vc.view)
+        
+        //4 add autolayout constraints so that the child view continues to fill the view
+        vc.view.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+        vc.view.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
+        vc.view.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+        vc.view.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+        
+        //5 Tell child it has moved to new parent
+        vc.didMove(toParentViewController: self)
+        
     }
     
     
