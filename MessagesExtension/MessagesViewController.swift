@@ -92,9 +92,16 @@ class MessagesViewController: MSMessagesAppViewController {
     }
     
     override func willTransition(to presentationStyle: MSMessagesAppPresentationStyle) {
-        // Called before the extension transitions to a new presentation style.
-    
-        // Use this method to prepare for the change in presentation style.
+        
+        for child in childViewControllers {
+            child.willMove(toParentViewController: nil)
+            child.view.removeFromSuperview()
+            child.removeFromParentViewController()
+        }
+        if presentationStyle == .expanded {
+            displayEventController(conversation: activeConversation, identifier: "CreateEvent")
+        }
+        
     }
     
     override func didTransition(to presentationStyle: MSMessagesAppPresentationStyle) {
